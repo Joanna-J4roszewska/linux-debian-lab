@@ -5,12 +5,17 @@ Format: Task → Command → What happened / What I learned
 ## Creating & reading (touch, echo, mkdir, cat)
 
 1. Create an empty file `test.txt` and confirm it exists.
-   *Command: `touch test.txt`
-     *Result: created a text file
-    *Command: `rm test.txt`
-     *Result: deleted a text file
+   * Command: `touch test.txt`
+     * What it does: created an empty file
+   * Command: `ls`
+     * Result: `test.txt` is listed (white = file)
+   * Command: `rm test.txt`
+     * What it does: deleted the file
+   * Learned: at first I used `mkdir test.txt` by mistake. It created a directory
+     named `test.txt` (shown in blue). The `.txt` in a name doesn't make it a file.
+     I removed it with `rmdir` and used `touch` instead.
 
-     ![pwd output](../../screenshots/02-filesystem/7.png)
+   ![touch, ls and rm output](../../screenshots/02-filesystem/7.png)
    
 3. Run `touch` on the same file again. What changed?
 4. Create three empty files with one command: `a.txt`, `b.txt`, `c.txt`.
