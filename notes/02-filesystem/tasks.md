@@ -42,7 +42,17 @@ Format: Task → Command → What happened / What I learned
 
     ![touch, ls and rm output](../../screenshots/02-filesystem/9.png)
 
-5. Create three empty files with one command: `a.txt`, `b.txt`, `c.txt`.
+4. Create three empty files with one command: `a.txt`, `b.txt`, `c.txt`.
+   * Command: `touch a.txt b.txt c.txt`
+     * What it does: created three empty files at once
+   * Command: `ls -l`
+     * Result: `a.txt`, `b.txt` and `c.txt` are listed, each with size 0
+   * Learned: the same behaviour that created two files in task 3
+     (space = separate arguments) is useful here. One `touch` can create
+     many files at once.
+    
+    ![touch, ls and rm output](../../screenshots/02-filesystem/10.png)
+   
 6. Print "Hello Debian" on the screen.
 7. Write "Hello Debian" into a file `hello.txt`.
 8. Add a second line "Learning Linux" to `hello.txt` without deleting the first one.
