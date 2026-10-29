@@ -16,14 +16,13 @@ Format: Task → Command → What happened / What I learned
       ![pwd output](../../screenshots/01-filesystem/pwd2.png)
 
 4. List files with details (permissions, size, date) in human-readable sizes.
- - Command: `ls -l`
-   - Result: `list files with details`
-   - Note: the date shown by `ls -l` is the last modification time, not the
-     creation time. `ls` doesn't show when a file was created by default.
- - Command: `ls -la`
-   - What it does: lists all files, including hidden ones, with details
- - Command: `ls -lah`
-   - What it does: same as `ls -la`, but with human-readable sizes (K, M, G)
+ * Command: `ls -l`
+   * What it does: lists files with details (permissions, owner, size, date)
+   * Note: the date shown by `ls -l` is the last modification time, not the creation time. `ls` doesn't show when a file was created by default.
+* Command: `ls -la`
+   * What it does: lists all files, including hidden ones, with details
+* Command: `ls -lah`
+   * What it does: same as `ls -la`, but with human-readable sizes (K, M, G)
 
      ![pwd output](../../screenshots/01-filesystem/3.png)
      
