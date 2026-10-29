@@ -53,16 +53,83 @@ Format: Task → Command → What happened / What I learned
     
     ![touch, ls and rm output](../../screenshots/02-filesystem/10.png)
    
-6. Print "Hello Debian" on the screen.
-7. Write "Hello Debian" into a file `hello.txt`.
-8. Add a second line "Learning Linux" to `hello.txt` without deleting the first one.
-9. Overwrite `hello.txt` with just "New content". What happened to the old lines?
-10. Create a folder `lab`.
-11. Create the path `lab/docs/old` with one command.
-12. Create three folders inside `lab` with one command: `backup`, `temp`, `logs`.
-13. Display the contents of `hello.txt`.
-14. Display `/etc/os-release` and find the Debian version.
-15. Display two files at once with one `cat` command.
+5. Print "Hello Debian" on the screen.
+   * Command: `echo Hello Debian`
+     * Result: `Hello Debian` printed in the terminal
+   * Learned: `echo` only displays text, it doesn't create anything.
+
+    ![touch, ls and rm output](../../screenshots/02-filesystem/11.png)
+   
+6. Write "Hello Debian" into a file `hello.txt`.
+   * Command: `echo "Hello Debian" > hello.txt`
+     * What it does: sends the text into the file instead of the screen
+   * Command: `cat hello.txt`
+     * Result: `Hello Debian`
+   * Learned: `>` redirects output to a file. The file is created
+     automatically if it doesn't exist, so `touch` isn't needed.
+
+   ![touch, ls and rm output](../../screenshots/02-filesystem/12.png)
+   
+7. Add a second line "Learning Linux" to `hello.txt` without deleting the first one.
+   * Command: `echo "Learning linux" >> hello.txt`
+     * What it does: appends the text at the end of the file
+   * Command: `cat hello.txt`
+     * Result: both lines are there: `Hello Debian` and `Learning linux`
+   * Learned: `>` overwrites the whole file, `>>` adds to the end of it.
+
+   ![touch, ls and rm output](../../screenshots/02-filesystem/13.png)
+   
+8. Overwrite `hello.txt` with just "New content". What happened to the old lines?
+   * Command: `echo "new content" > hello.txt`
+     * What it does: replaces the whole content of the file
+   * Command: `cat hello.txt`
+     * Result: only `new content` – both old lines are gone
+   * Learned: `>` deletes everything in the file before writing, without
+     any warning. Be careful with it on important files.
+     
+    ![touch, ls and rm output](../../screenshots/02-filesystem/14.png)
+  
+9. Create a folder `lab`, then create the path `lab/docs/old` with one command.
+   * Command: `mkdir lab`
+     * What it does: created the `lab` directory
+   * Command: `mkdir -p lab/docs/old`
+     * What it does: created `docs` inside `lab` and `old` inside `docs` at once
+   * Command: `cd lab` → `ls` → `cd docs` → `ls`
+     * Result: `lab` contains `docs`, and `docs` contains `old`
+   * Learned: `-p` creates all missing directories along the path.
+     
+    ![touch, ls and rm output](../../screenshots/02-filesystem/15.png)
+   
+11. Create three folders inside `lab` with one command: `backup`, `temp`, `logs`.
+   * Command: `mkdir backup temp logs` (inside `lab`)
+     * What it does: created three directories at once, side by side
+   * Command: `ls`
+     * Result: `backup`, `docs`, `logs`, `temp`
+   * Learned: at first I used `mkdir -p backup/temp/logs`, which created
+     the folders one inside another. `/` means "go inside", while spaces
+     separate names, so they end up side by side.
+ 
+  ![touch, ls and rm output](../../screenshots/02-filesystem/16.png)
+    
+12. Display `/etc/os-release` and find the Debian version.
+   * Command: `cat /etc/os-release`
+     * Result: Debian GNU/Linux 10 (buster)
+   * Learned: `/etc/os-release` holds info about the system version.
+     WebVM runs Debian 10, which is no longer supported. The current
+     stable release is Debian 13 (trixie).
+
+  ![touch, ls and rm output](../../screenshots/02-filesystem/17.png)
+  
+13. Display two files at once with one `cat` command.
+   * Command: `echo "hi from a.txt" > a.txt` and `echo "hi from b.txt" > b.txt`
+     * What it does: put some text into both files first
+   * Command: `cat a.txt b.txt`
+     * Result: `hi from a.txt` and `hi from b.txt`, one after another
+   * Learned: `cat` can take many files and shows them in order.
+     The name comes from "concatenate", which means joining together.
+
+  ![touch, ls and rm output](../../screenshots/02-filesystem/18.png)
+  
 16. Display `hello.txt` with line numbers.
 17. Join `a.txt` and `hello.txt` into a new file `joined.txt` using `cat`.
 
