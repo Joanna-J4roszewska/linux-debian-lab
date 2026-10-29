@@ -27,6 +27,16 @@ Format: Task → Command → What happened / What I learned
      ![pwd output](../../screenshots/01-filesystem/3.png)
      
 6. Go to `/etc`, check your location, then return home in the shortest way possible.
-7. Go up one directory, then go back to the previous directory with one short command.
-8. What's the difference between an absolute and a relative path? Show one example of each with `cd`.
+* Command: `cd /etc`
+   * What it does: moved me to the `/etc` directory
+* Command: `pwd`
+   * What it does: showed my current location
+   * Result: `/etc`
+* Command: `cd`
+   * What it does: moved me back to my home directory (shortest way)
+
+     ![pwd output](../../screenshots/01-filesystem/4.png)
+
+8. Go up one directory, then go back to the previous directory with one short command.
+9. What's the difference between an absolute and a relative path? Show one example of each with `cd`.
 ****
