@@ -16,7 +16,19 @@ Format: Task → Command → What happened / What I learned
      I removed it with `rmdir` and used `touch` instead.
 
    ![touch, ls and rm output](../../screenshots/02-filesystem/7.png)
-   
+
+2. Create a hidden file `.secret` and check which `ls` command shows it and which doesn't.
+   * Command: `touch .secret`
+     * What it does: created a hidden file
+   * Command: `ls`
+     * Result: `.secret` is not listed
+   * Command: `ls -a`
+     * Result: `.secret` is listed
+   * Learned: a file is hidden only when its name starts with a dot.
+     A dot in the middle (`secret.secret`) doesn't hide it.
+
+   ![touch, ls and rm output](../../screenshots/02-filesystem/8.png)
+
 3. Run `touch` on the same file again. What changed?
 4. Create three empty files with one command: `a.txt`, `b.txt`, `c.txt`.
 5. Print "Hello Debian" on the screen.
