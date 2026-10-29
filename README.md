@@ -1,8 +1,8 @@
 
 # Linux / Debian Lab
 
-Hands-on Linux administration practice in browser-based environments
-(WebVM, Killercoda), documented step by step.
+Hands-on Linux administration practice in browser-based environment
+(WebVM), documented step by step.
 
 ## Why browser-based?
 My Active Directory homelab is temporarily on hold — I currently have
