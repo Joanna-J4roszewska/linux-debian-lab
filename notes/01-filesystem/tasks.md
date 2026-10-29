@@ -55,5 +55,11 @@ Format: Task → Command → What happened / What I learned
    * Example: `cd documents` (when in `/home/user`)
 
    ![pwd output](../../screenshots/01-filesystem/6.png)
+
+
+## Summary
+A nice refresher after a break from Linux. Nothing really surprised me;
+it was mostly about reminding myself of some commands. The only new
+(or completely forgotten) one was `cd -`.
   
 ****
