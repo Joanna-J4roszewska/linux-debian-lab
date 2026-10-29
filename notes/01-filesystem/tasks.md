@@ -13,7 +13,7 @@ Format: Task → Command → What happened / What I learned
    - Command: `ls -a`
    - Result: `files including hidden ones`
 
-   ![pwd output](../../screenshots/01-filesystem/pwd.png)
+   ![pwd output](../../screenshots/01-filesystem/pwd2.png)
 
 4. List files with details (permissions, size, date) in human-readable sizes.
 5. Go to `/etc`, check your location, then return home in the shortest way possible.
