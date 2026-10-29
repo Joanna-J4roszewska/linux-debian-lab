@@ -48,5 +48,12 @@ Format: Task → Command → What happened / What I learned
 
       ![pwd output](../../screenshots/01-filesystem/5.png)
   
-10. What's the difference between an absolute and a relative path? Show one example of each with `cd`.
+10. What's the difference between an absolute and a relative path? Show one example of each with `cd`.\
+* Absolute path: full path starting from the root `/`. Works from anywhere.
+   * Example: `cd /home/user/documents`
+* Relative path: path starting from the current directory. Doesn't start with `/`.
+   * Example: `cd documents` (when in `/home/user`)
+
+   ![pwd output](../../screenshots/01-filesystem/6.png)
+  
 ****
