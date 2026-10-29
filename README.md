@@ -11,6 +11,9 @@ using online VMs in the meantime.
 
 ## Topics
 - [ ] Basic commands & filesystem
+  - [x] Navigation 
+  - [ ] Creating & reading files 
+  - [ ] Copying, moving & deleting 
 - [ ] Users, groups, permissions
 - [ ] Package management (apt)
 - [ ] Processes & services
