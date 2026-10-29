@@ -10,8 +10,13 @@ Format: Task → Command → What happened / What I learned
    ![pwd output](../../screenshots/01-filesystem/pwd.png)
 
 2. List files in your home directory, including hidden ones.
-3. List files with details (permissions, size, date) in human-readable sizes.
-4. Go to `/etc`, check your location, then return home in the shortest way possible.
-5. Go up one directory, then go back to the previous directory with one short command.
-6. What's the difference between an absolute and a relative path? Show one example of each with `cd`.
+   - Command: `ls -a`
+   - Result: `files including hidden ones`
+
+   ![pwd output](../../screenshots/01-filesystem/pwd.png)
+
+4. List files with details (permissions, size, date) in human-readable sizes.
+5. Go to `/etc`, check your location, then return home in the shortest way possible.
+6. Go up one directory, then go back to the previous directory with one short command.
+7. What's the difference between an absolute and a relative path? Show one example of each with `cd`.
 ****
