@@ -5,10 +5,10 @@ Format: Task → Command → What happened / What I learned
 ## Navigation (ls, cd, pwd)
 1. Check where you are right after opening the terminal.
    - Command: `pwd`
-    ![pwd output](../../screenshots/01-filesystem/pwd.png)
    - Result: `/home/user/documents`
 
-   
+   ![pwd output](../../screenshots/01-filesystem/pwd.png)
+
 2. List files in your home directory, including hidden ones.
 3. List files with details (permissions, size, date) in human-readable sizes.
 4. Go to `/etc`, check your location, then return home in the shortest way possible.
