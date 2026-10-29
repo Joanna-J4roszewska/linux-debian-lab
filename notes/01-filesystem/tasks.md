@@ -38,5 +38,15 @@ Format: Task → Command → What happened / What I learned
      ![pwd output](../../screenshots/01-filesystem/4.png)
 
 8. Go up one directory, then go back to the previous directory with one short command.
-9. What's the difference between an absolute and a relative path? Show one example of each with `cd`.
+* Command: `cd examples`
+   * What it does: moved me into the `examples` directory
+* Command: `cd ..`
+   * What it does: moved me one directory up (parent directory)
+* Command: `cd -`
+   * What it does: moved me back to the previous directory I was in
+   * Note: `cd -` works like a "back" button. Running it again switches between the last two directories.
+
+      ![pwd output](../../screenshots/01-filesystem/5.png)
+  
+10. What's the difference between an absolute and a relative path? Show one example of each with `cd`.
 ****
