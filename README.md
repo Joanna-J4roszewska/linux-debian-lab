@@ -1,4 +1,3 @@
-# linux-debian-lab
 
 # Linux / Debian Lab
 
