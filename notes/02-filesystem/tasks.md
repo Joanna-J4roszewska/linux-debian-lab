@@ -1,3 +1,7 @@
+# 02 – Filesystem basics
+
+Format: Task → Command → What happened / What I learned
+
 ## Creating & reading (touch, echo, mkdir, cat)
 
 1. Create an empty file `test.txt` and confirm it exists.
