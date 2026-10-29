@@ -5,7 +5,7 @@ Hands-on Linux administration practice in browser-based environment
 (WebVM), documented step by step.
 
 ## Why browser-based?
-My Active Directory homelab is temporarily on hold — I currently have
+My Active Directory homelab is temporarily on hold. I currently have
 no access to my personal machine, so I'm focusing on Linux fundamentals
 using online VMs in the meantime.
 
