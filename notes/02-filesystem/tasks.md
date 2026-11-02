@@ -2,6 +2,13 @@
 
 Format: Task → Command → What happened / What I learned
 
+Environment change (from task 16)
+
+Tasks 1–15 were done in WebVM.
+From task 16 I switched to my own virtual machine: Debian 13 "trixie" installed
+by me in VirtualBox, netinst ISO, guided partitioning, user with sudo, root password left empty.
+Debian 13 is the current stable release, so from now on the results match a real, supported system.
+
 ## Creating & reading (touch, echo, mkdir, cat)
 
 1. Create an empty file `test.txt` and confirm it exists.
