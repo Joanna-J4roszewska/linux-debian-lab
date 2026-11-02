@@ -7,7 +7,7 @@ Format: Task → Command → What happened / What I learned
    * Command: `seq 1 20 > numbers.txt`
      * What it does: created a file numbers.txt that counts 1 to 20 one per line.
      * 
-     ![touch, ls and rm output](../../screenshots/02-filesystem/21.png)
+     ![touch, ls and rm output](../../screenshots/03-filesystem/21.png)
 
 3. Display only the first 5 lines of `numbers.txt`.
 4. Display only the last 3 lines of `numbers.txt`.
