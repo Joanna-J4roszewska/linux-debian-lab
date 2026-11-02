@@ -37,8 +37,16 @@ Format: Task → Command → What happened / What I learned
 
 ### Information about files
 1. Check what type of file `/etc/os-release`, `/bin/ls` and `lab` are, using one command.
-2. Show the size, owner, permissions and last modification time of `hello.txt`.
-3. Run `touch` on an existing file `hello.txt`. What changed and what didn't? Prove it.
+   * Command: `file /etc/os-release /bin/ls lab`
+     * What it does: checks what kind of file each path is
+    
+     ![touch, ls and rm output](../../screenshots/03-filesystem/26.png)
+
+3. Show the size, owner, permissions and last modification time of `hello.txt`.
+  * Command: `ls -l hello.txt`
+     * What it does: shows the size, owner, permissions and last modification time of `hello.txt`
+    
+     ![touch, ls and rm output](../../screenshots/03-filesystem/27.png)
 
 ### Copying, moving, renaming, deleting
 1. Copy `hello.txt` to `lab/backup/hello_copy.txt`.
