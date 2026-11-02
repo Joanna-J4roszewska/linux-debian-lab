@@ -16,7 +16,7 @@ Format: Task → Command → What happened / What I learned
      ![touch, ls and rm output](../../screenshots/03-filesystem/22.png)
     
 5. Display only the last 3 lines of `numbers.txt`.
-    * Command: `tail -n 3 numbers.txt`
+  * Command: `tail -n 3 numbers.txt`
      * What it does: displays 3 last lines of numbers.txt
     
      ![touch, ls and rm output](../../screenshots/03-filesystem/23.png)
