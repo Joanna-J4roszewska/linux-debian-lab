@@ -137,10 +137,15 @@ by me in VirtualBox, netinst ISO, guided partitioning, user with sudo, root pass
   ![touch, ls and rm output](../../screenshots/02-filesystem/18.png)
   
 16. Display `hello.txt` with line numbers.
-17. Join `a.txt` and `hello.txt` into a new file `joined.txt` using `cat`.
+   * Command: cat -n hello.txt
+     * What it does: -n adds a number before every line
 
-## Scenario: quick note file
-Inside `lab/docs`, create a file `notes.txt` containing three lines:
-your name, today's date (taken from the system, not typed by hand),
-and the current directory path (also from the system).
-Then display it to confirm
+  ![touch, ls and rm output](../../screenshots/02-filesystem/19.png)
+  
+18. Join `a.txt` and `hello.txt` into a new file `joined.txt` using `cat`.
+  * Command: cat cat a.txt hello.txt >> joined.txt
+     * What it does: combines the content of both text files into one,
+      creating the new file joined.txt at the same time
+
+  ![touch, ls and rm output](../../screenshots/02-filesystem/20.png)
+  
