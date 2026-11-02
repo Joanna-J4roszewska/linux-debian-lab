@@ -9,13 +9,13 @@ Format: Task → Command → What happened / What I learned
     
      ![touch, ls and rm output](../../screenshots/03-filesystem/21.png)
 
-2. Display only the first 5 lines of `numbers.txt`.
-    * Command: `head -n 5 numbers.txt`
+3. Display only the first 5 lines of `numbers.txt`.
+   * Command: `head -n 5 numbers.txt`
      * What it does: displays first 5 lines of numbers.txt
     
      ![touch, ls and rm output](../../screenshots/03-filesystem/22.png)
     
-3. Display only the last 3 lines of `numbers.txt`.
+5. Display only the last 3 lines of `numbers.txt`.
   * Command: `tail -n 3 numbers.txt`
      * What it does: displays 3 last lines of numbers.txt
     
