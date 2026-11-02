@@ -6,13 +6,23 @@ Format: Task → Command → What happened / What I learned
 1. Create a file `numbers.txt` with the numbers 1 to 20, one per line, without typing them by hand.
    * Command: `seq 1 20 > numbers.txt`
      * What it does: created a file numbers.txt that counts 1 to 20 one per line.
-     * 
+    
      ![touch, ls and rm output](../../screenshots/03-filesystem/21.png)
 
 3. Display only the first 5 lines of `numbers.txt`.
-4. Display only the last 3 lines of `numbers.txt`.
-5. Open `/etc/services` in a pager, scroll down, search for the word `ssh` inside it, then quit.
-6. Count how many lines, words and characters `hello.txt` has. Then count only the lines.
+  * Command: `head -n 5 numbers.txt`
+     * What it does: displays first 5 lines of numbers.txt
+    
+     ![touch, ls and rm output](../../screenshots/03-filesystem/22.png)
+    
+5. Display only the last 3 lines of `numbers.txt`.
+    * Command: `tail -n 3 numbers.txt`
+     * What it does: displays 3 last lines of numbers.txt
+    
+     ![touch, ls and rm output](../../screenshots/03-filesystem/23.png)
+   
+7. Open `/etc/services` in a pager, scroll down, search for the word `ssh` inside it, then quit.
+8. Count how many lines, words and characters `hello.txt` has. Then count only the lines.
 
 ### Information about files
 1. Check what type of file `/etc/os-release`, `/bin/ls` and `lab` are, using one command.
