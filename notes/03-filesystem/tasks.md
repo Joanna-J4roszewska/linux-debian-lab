@@ -22,7 +22,18 @@ Format: Task → Command → What happened / What I learned
      ![touch, ls and rm output](../../screenshots/03-filesystem/23.png)
    
 4. Open `/etc/services` in a pager, scroll down, search for the word `ssh` inside it, then quit.
-5. Count how many lines, words and characters `hello.txt` has. Then count only the lines.
+   * Command: `less /etc/services`
+   * Command: `?ssh`
+     * What it does: ?ssh or ?anything lets you find that one thing you are searching for in a very long doccument.       you leave by using `q`
+    
+     ![touch, ls and rm output](../../screenshots/03-filesystem/24.png)
+     
+6. Count how many lines, words and characters `hello.txt` has. Then count only the lines.
+   * Command: `wc hello.txt`
+   * Command: `wc -l hello.txt`
+     * What it does: wc hello.txt shows 2 4 25, which means the number of lines, words and bytes, followed by the         file name. wc -l shows only the number of lines.
+    
+     ![touch, ls and rm output](../../screenshots/03-filesystem/25.png)
 
 ### Information about files
 1. Check what type of file `/etc/os-release`, `/bin/ls` and `lab` are, using one command.
