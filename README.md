@@ -20,7 +20,7 @@ using online VMs in the meantime.
 - [ ] Processes & services
 - [ ] Networking basics
 - [ ] SSH & hardening
-- [ ] Office admin – ticket-based tasks (onboarding, permissions, offboarding, services, firewall, backups)
+- [ ] Office admin – ticket-based tasks (onboarding, offboarding, services, firewall)
 
 ## Notes
 Each topic has its own file in `/notes` with commands and screenshots.
