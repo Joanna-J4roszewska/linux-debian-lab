@@ -98,6 +98,27 @@ Format: Task → Command → What happened / What I learned
 ### Writing to files in smarter ways
 
 1. Write a line into `log.txt` and display it on the screen at the same time, with one command.
+   * Command: `echo "testujemy" | tee log.txt`
+     * What it does: writes the line into log.txt and shows it on the screen at the same time. Running it again on the same file overwrites it, just like `>`.
+   * Command: `echo "druga linijka" | tee -a log.txt`
+     * What it does: -a adds the line at the end instead of overwriting, just like `>>` (which i tried to use at first but it failed)
+
+   ![tee](/screenshots/03-filesystem/35.png)
+   ![tee](/screenshots/03-filesystem/36.png)
+   
 2. Create `config.txt` with 3 lines of content using a single command (no editor, no three echos).
+   * Command: `printf "pierwsza\ndruga\ntrzecia\n > config.txt`
+     * What it does: created config.txt with 3 lines using a single command
+    
+     ![printf](/screenshots/03-filesystem/37.png)
+
 3. Open `config.txt` in `nano`, add a fourth line, save and exit.
-4. Display a file where you can see hidden characters like tabs and line endings.
+  * Command: `nano config.txt`
+  * Command: Ctrl + O + Enter
+  * Command: Ctrl + X + Enter
+     * What it does: turned on nano, wrote fourth line, saved it by using Ctrl O and left nano by using Ctrl X
+    
+    ![nano](/screenshots/03-filesystem/38.png)
+    ![nano](/screenshots/03-filesystem/39.png)
+    
+6. Display a file where you can see hidden characters like tabs and line endings.
