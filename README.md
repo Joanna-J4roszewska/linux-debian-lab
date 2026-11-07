@@ -15,6 +15,7 @@ using online VMs in the meantime.
   - [x] Creating & reading files 
   - [x] Copying, moving & deleting 
 - [ ] Users, groups, permissions
+- [ ] Backup & restore
 - [ ] Package management (apt)
 - [ ] Processes & services
 - [ ] Networking basics
