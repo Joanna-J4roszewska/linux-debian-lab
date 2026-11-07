@@ -10,10 +10,10 @@ no access to my personal machine, so I'm focusing on Linux fundamentals
 using online VMs in the meantime.
 
 ## Topics
-- [ ] Basic commands & filesystem
+- [x] Basic commands & filesystem
   - [x] Navigation 
-  - [ ] Creating & reading files 
-  - [ ] Copying, moving & deleting 
+  - [x] Creating & reading files 
+  - [x] Copying, moving & deleting 
 - [ ] Users, groups, permissions
 - [ ] Package management (apt)
 - [ ] Processes & services
