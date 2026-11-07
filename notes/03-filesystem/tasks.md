@@ -121,4 +121,12 @@ Format: Task → Command → What happened / What I learned
     ![nano](/screenshots/03-filesystem/38.png)
     ![nano](/screenshots/03-filesystem/39.png)
     
-6. Display a file where you can see hidden characters like tabs and line endings.
+4. Display a file where you can see hidden characters like tabs and line endings.
+  * Command: `printf "imie\tdzial\nanna\tfinanse\n > tabs.txt`
+  * Command: `cat -A tabs.txt `
+     * What it does: cat -A shows hidden characters
+    
+    ![cat -A](/screenshots/03-filesystem/40.png)
+ 
+
+Summary: this part felt like I'm finally picking up the pace. Some of it was a refresher, but there was also quite a lot of new stuff for me, like tee, printf, cat -A and searching inside less.
