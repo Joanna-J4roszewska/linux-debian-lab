@@ -50,11 +50,48 @@ Format: Task → Command → What happened / What I learned
 
 ### Copying, moving, renaming, deleting
 1. Copy `hello.txt` to `lab/backup/hello_copy.txt`.
+  * Command: `cp hello.txt lab/backup/hello_copy.txt`
+     * What it does: copies hello.txt into lab/backup and gives the copy a new name, hello_copy.txt. The original hello.txt stays where it was, unchanged.
+
+     ![cp output](../../screenshots/03-filesystem/29.png)
+    
 2. Rename `joined.txt` to `combined.txt`.
+  * Command: `mv joined.txt combined.txt`
+     * What it does: changes the name
+       
+    ![cp output](../../screenshots/03-filesystem/30.png)
+    
 3. Move `combined.txt` into `lab/docs`.
+    * Command: `mv combined.txt lab/docs/`
+     * What it does: moves combined.txt into the lab/docs directory and keeps its name
+     * Learned: mv combined.txt lab/docs overwrote that file without any warning instead of moving mine into a folder. mv behaves differently depending on the destination: if it's an existing directory, the file goes inside; if it's an existing file, it gets overwritten;
+
+    ![mv output](../../screenshots/03-filesystem/31.png)
+   
 4. Copy the whole `lab/docs` folder (with everything inside) to `lab/docs_backup`.
+  * Command: `cp -r lab/docs lab/docs_backup`
+     * What it does: copies the docs folder with everything inside into a new folder docs_backup
+       
+    ![cp output](../../screenshots/03-filesystem/32.png)
+    
 5. Delete a file in a way that asks you for confirmation first.
+ * Command: `rm -i plik.txt`
+     * What it does: asks for confirmation before deleting each file. On my system (Polish) `t` deletes the file, `n` or just Enter keeps it. On an English system it would be `y` instead of `t`.
+     * Learned: rm deletes files immediately and there's no recycle bin in the terminal, so a deleted file can't be restored. -i works as a safety check before removing anything important.
+
+    ![rm output](../../screenshots/03-filesystem/33.png)
+   
 6. Delete the folder `lab/temp`. Then try to delete `lab/docs_backup` the same way. Why does one work and the other not?
+ * Command: `rmdir lab/temp`
+     * What it does: deletes the folder. It worked because lab/temp was empty.
+ * Command: `rmdir lab/docs_backup`
+     * What it does: failed with "Directory not empty", because lab/docs_backup still had combined.txt inside.
+ * Command: `rm -ri lab/docs_backup`
+     * What it does: deletes the folder together with everything inside (-r) and asks for confirmation for each file (-i).
+     * Learned: rmdir only removes empty directories, which is why it has no -i option: there's nothing inside to lose. For a folder with files you need rm -r, and adding -i makes it ask before deleting anything.
+       
+    ![cp output](../../screenshots/03-filesystem/34.png)
+    
 
 ### Writing to files in smarter ways
 7. Write a line into `log.txt` and display it on the screen at the same time, with one command.
