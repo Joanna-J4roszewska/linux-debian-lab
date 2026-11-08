@@ -67,13 +67,16 @@ Format: Task → Command → What happened / What I learned
         ![su](/screenshots/04-filesystem/49.png)
 
 8. Find the `projekt` group in `/etc/group`. Who is listed as a member?
-   * Command:
-     * What it does:
+   * Command:`grep finance /etc/group`
+
+     ![su](/screenshots/04-filesystem/50.png)
 
 9. Remove `testuser` from the `projekt` group without deleting the user.
-   * Command:
-     * What it does:
+   * Command:`gpasswd -d ola finance `
+     * What it does:deletes the user from a group
 
+       ![su](/screenshots/04-filesystem/51.png)
+       
 ### Reading permissions
 
 10. Run `ls -l` on a file and explain every part of the permissions, for example `-rw-r--r--`.
