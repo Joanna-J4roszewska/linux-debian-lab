@@ -89,11 +89,13 @@ Format: Task → Command → What happened / What I learned
 
     ![su](/screenshots/04-filesystem/52.png)
 
-    -    rw-    rw-    r--
-    │    │      │      └── others
-    │    │      └── group 
-    │    └── user/owner 
-    └── type: - = plik, d = katalog
+```
+-    rw-    rw-    r--
+│    │      │      └── others
+│    │      └── group
+│    └── user/owner
+└── type: - = file, d = directory
+```
 
 11. Compare the permissions of a file and a directory. What does the first character tell you?
     * Command:`ls -l`
