@@ -66,12 +66,12 @@ Format: Task → Command → What happened / What I learned
         ![su](/screenshots/04-filesystem/48.png)
         ![su](/screenshots/04-filesystem/49.png)
 
-8. Find the `projekt` group in `/etc/group`. Who is listed as a member?
+8. Find the `finance` group in `/etc/group`. Who is listed as a member?
    * Command:`grep finance /etc/group`
 
      ![su](/screenshots/04-filesystem/50.png)
 
-9. Remove `testuser` from the `projekt` group without deleting the user.
+9. Remove `ola` from the `finance` group without deleting the user.
    * Command:`gpasswd -d ola finance `
      * What it does:deletes the user from a group
 
@@ -80,12 +80,26 @@ Format: Task → Command → What happened / What I learned
 ### Reading permissions
 
 10. Run `ls -l` on a file and explain every part of the permissions, for example `-rw-r--r--`.
-    * Command:
-      * What it does:
+    * Command: `ls -l`
+  * What it does: the first character is the file type, then the permissions
+    for the owner, the group and others. For example, for config.txt the owner
+    can read and write, so can the group, but others can only read. lab has
+    a "d" marker, which means it's a directory. The owner has full access,
+    so does the group, but others can only read and execute.
+
+    ![su](/screenshots/04-filesystem/52.png)
+
+    -    rw-    rw-    r--
+    │    │      │      └── others
+    │    │      └── group 
+    │    └── user/owner 
+    └── type: - = plik, d = katalog
 
 11. Compare the permissions of a file and a directory. What does the first character tell you?
-    * Command:
-      * What it does:
+    * Command:`ls -l`
+      * What it does:"-" is a normal basic file, "d" is a directory
+
+     ![su](/screenshots/04-filesystem/52.png)
 
 ### Changing permissions
 
