@@ -5,16 +5,28 @@ Format: Task → Command → What happened / What I learned
 ### Who am I
 
 1. Check which user you are logged in as, and what your user ID and groups are.
-   * Command:
-     * What it does:
+   * Command:`id`
+     * What it does:shows which user I am logged in as, what's my user Id and groups are
+     
+       ![id](/screenshots/04-filesystem/41.png)
 
 2. Find your own user in `/etc/passwd` and explain what each part of the line means.
-   * Command:
-     * What it does:
+   * Command: `cat /etc/passwd`
+   * Command: `grep joa /etc/passwd`
+     * What happened: cat printed a long list of all accounts on the system,
+    so I used grep to show only the line with my user:
+    joa:x:1000:1000:joa,,,:/home/joa:/bin/bash
+
+       ![grep](/screenshots/04-filesystem/42.png)
 
 3. Try to read `/etc/shadow` as a normal user, then with sudo. What's the difference and why?
-   * Command:
-     * What it does:
+   * Command:`cat /etc/shadow` > Permission denied
+   * Command: `sudo cat /etc/shadow` > asked for MY password 
+     * What it does: /etc/shadow stores password hashes so only root can read it
+    - sudo asks for the user's own password not root's (user must be in the sudo group)
+    - "*" or "!" in the password field = no password login possible (system accounts)
+    - dates are counted in days since 1 Jan 1970 (20759 = 2 Nov 2026)
+    - never publish your own hash 
 
 ### Creating and managing users
 
