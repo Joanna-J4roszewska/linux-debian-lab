@@ -23,10 +23,10 @@ Format: Task → Command → What happened / What I learned
    * Command:`cat /etc/shadow` > Permission denied
    * Command: `sudo cat /etc/shadow` > asked for MY password 
      * What it does: /etc/shadow stores password hashes so only root can read it
-    - sudo asks for the user's own password not root's (user must be in the sudo group)
-    - "*" or "!" in the password field = no password login possible (system accounts)
-    - dates are counted in days since 1 Jan 1970 (20759 = 2 Nov 2026)
-    - never publish your own hash 
+    * sudo asks for the user's own password not root's (user must be in the sudo group)
+    * "*" or "!" in the password field = no password login possible (system accounts)
+    * dates are counted in days since 1 Jan 1970 (20759 = 2 Nov 2026)
+    * **never publish your own hash** 
 
 ### Creating and managing users
 
