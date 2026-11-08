@@ -30,23 +30,41 @@ Format: Task → Command → What happened / What I learned
 
 ### Creating and managing users
 
-4. Create a new user `testuser` with a home directory. Check that the home directory exists.
-   * Command:
-     * What it does:
+4. Create a new user `ola` with a home directory. Check that the home directory exists.
+   * Command: `sudo adduser ola`
+    * Command: `getent passwd ola`
+    * Command: `ls -ld /home/ola`
+    * What happened: adduser asked for a password and some optional info,
+      getent showed the new account (UID 1001, home /home/ola),
+      ls confirmed the home directory exists and belongs to ola
 
-5. Switch to `testuser`, check where you are and who you are, then go back to your own user.
-   * Command:
-     * What it does:
+      ![sudo](/screenshots/04-filesystem/44.png)
+      ![sudo](/screenshots/04-filesystem/45.png)
 
-6. Change the password of `testuser`.
-   * Command:
-     * What it does:
+5. Switch to `ola`, check where you are and who you are, then go back to your own user.
+   * Command:`su - ola`
+   * Command:`pwd`
+     * What it does:su - <user> switches user and loads their environment
+       
+       ![su](/screenshots/04-filesystem/46.png)
+
+6. Change the password of `ola`.
+   * Command:`sudo passwd ola`
+     * What it does: changes the password
+    
+        ![su](/screenshots/04-filesystem/47.png)
 
 ### Groups
 
-7. Create a group `projekt` and add both your user and `testuser` to it. Check that it worked.
-   * Command:
-     * What it does:
+7. Create a group `finance` and add both your user and `ola` to it. Check that it worked.
+   * Command:`sudo groupadd finance`
+   * Command:`sudo usermod -a -G finance user`
+   * Command: `getent group finance`
+     * What it does:-a (append) is essential: without it -G REPLACES all user's groups
+
+       
+        ![su](/screenshots/04-filesystem/48.png)
+        ![su](/screenshots/04-filesystem/49.png)
 
 8. Find the `projekt` group in `/etc/group`. Who is listed as a member?
    * Command:
