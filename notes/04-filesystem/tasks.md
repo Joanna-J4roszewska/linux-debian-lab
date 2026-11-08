@@ -105,29 +105,31 @@ Format: Task → Command → What happened / What I learned
 
 ### Changing permissions
 
-12. Create `secret.txt` and make it readable and writable only by you, using letters (symbolic mode).
-    * Command:
-      * What it does:
+12. Create `secret.txt` and make it readable and writable only by you.
+    * Command: `chmod 600 secret.txt `
 
-13. Do the same thing on another file using numbers (numeric mode). What number did you use and why?
-    * Command:
-      * What it does:
+      ![su](/screenshots/04-filesystem/53.png)
 
-14. Create a script `hello.sh`, try to run it, then give it permission to run and try again.
-    * Command:
-      * What it does:
+13. Create a script `script.sh`, try to run it, then give it permission to run and try again.
+    * Command:`nano script.sh`
+    * Command: `echo "hello", ls -l`
+    * Command: `chmod +x script_name.sh`
+    * Command: `./script.sh`
 
-15. Switch to `testuser` and try to read your `secret.txt`. What happens?
+      ![nano](/screenshots/04-filesystem/54.png)
+      ![nano](/screenshots/04-filesystem/55.png)
+
+14. Switch to `testuser` and try to read your `secret.txt`. What happens?
     * Command:
       * What it does:
 
 ### Ownership
 
-16. Create a file as yourself and change its owner to `testuser` and its group to `projekt`.
+15. Create a file as yourself and change its owner to `testuser` and its group to `projekt`.
     * Command:
       * What it does:
 
-17. Try to change the owner of a file without sudo. Why doesn't it work?
+16. Try to change the owner of a file without sudo. Why doesn't it work?
     * Command:
       * What it does:
 
