@@ -119,9 +119,11 @@ Format: Task → Command → What happened / What I learned
       ![nano](/screenshots/04-filesystem/54.png)
       ![nano](/screenshots/04-filesystem/55.png)
 
-14. Switch to `testuser` and try to read your `secret.txt`. What happens?
-    * Command:
-      * What it does:
+14. Switch to `ola` and try to read your `secret.txt`. What happens?
+    * Command:`su -u ola`
+    * Commands:`cat /home/joa/secret.txt`
+
+      ![su](/screenshots/04-filesystem/56.png)
 
 ### Ownership
 
